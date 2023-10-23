@@ -8,7 +8,7 @@ const MusicAlbum = require("../Models/AlbumModel");
 const bigInt = require("big-integer");
 var ret=[];
 
-const authorizationHeader= require('config.js');
+const authorizationHeader= require('config.js').authorizationHeader;
 function allCds(keys){
     const fetchPromises = keys.map(key => {
         return fetch(`https://api.discogs.com/releases/${bigInt(key)}`, {

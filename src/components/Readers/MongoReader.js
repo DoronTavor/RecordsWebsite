@@ -1,7 +1,7 @@
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://tavorsoftwareng:DavidBlu13@clusterrecords.vwadsqf.mongodb.net/?retryWrites=true&w=majority";
+const uri = require("config.js").uri;
  const MusicAlbum= require("../Models/AlbumModel");
 //const {Client: Discogs} = require("disconnect");
 const bigInt = require('big-integer');
